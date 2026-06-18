@@ -4,14 +4,14 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import StarField from "@/components/StarField";
-import LibraryBg from "@/components/LibraryBg";
-import GrainOverlay from "@/components/GrainOverlay";
-import FadeIn from "@/components/FadeIn";
-import ShareCard from "@/components/ShareCard";
-import { calculateAll, type FortuneResult } from "@/lib/fortune-calc";
+import StarField from "@/shared/ui/StarField";
+import LibraryBg from "@/shared/ui/LibraryBg";
+import GrainOverlay from "@/shared/ui/GrainOverlay";
+import FadeIn from "@/shared/ui/FadeIn";
+import ShareCard from "@/shared/ui/ShareCard";
+import { calculateAll, type FortuneResult } from "@/features/fortune/fortune-calc";
 import { generateFortune } from "@/app/actions";
-import { CHARACTER_CONFIG, type Character } from "@/lib/character";
+import { CHARACTER_CONFIG, type Character } from "@/features/fortune/character";
 
 /* ━━━ Topic config (shared with main page) ━━━ */
 type TopicId = "general" | "work" | "love" | "social" | "money";

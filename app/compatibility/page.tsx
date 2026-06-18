@@ -4,14 +4,14 @@ import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { calculateAll, calculateCompatibility, type CompatibilityType } from "@/lib/fortune-calc";
+import { calculateAll, calculateCompatibility, type CompatibilityType } from "@/features/fortune/fortune-calc";
 import { generateFortune } from "@/app/actions";
-import { CHARACTER_CONFIG, type Character } from "@/lib/character";
-import StarField from "@/components/StarField";
-import FadeIn from "@/components/FadeIn";
-import LibraryBg from "@/components/LibraryBg";
-import GrainOverlay from "@/components/GrainOverlay";
-import ShareCard from "@/components/ShareCard";
+import { CHARACTER_CONFIG, type Character } from "@/features/fortune/character";
+import StarField from "@/shared/ui/StarField";
+import FadeIn from "@/shared/ui/FadeIn";
+import LibraryBg from "@/shared/ui/LibraryBg";
+import GrainOverlay from "@/shared/ui/GrainOverlay";
+import ShareCard from "@/shared/ui/ShareCard";
 
 const TEST_MODE = false;
 

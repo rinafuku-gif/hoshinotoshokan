@@ -25,7 +25,7 @@ import {
   MAYA_MONTHS,
   STEMS,
   BRANCHES,
-} from "@/lib/fortune-calc";
+} from "@/features/fortune/fortune-calc";
 
 // ---------- normalizeAngle ----------
 

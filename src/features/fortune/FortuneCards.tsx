@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import type { FortuneResult } from "@/lib/fortune-calc";
+import type { FortuneResult } from "@/features/fortune/fortune-calc";
 
 interface FortuneCardsProps {
   data: FortuneResult;
